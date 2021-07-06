@@ -35,3 +35,13 @@ class PrimarySchool extends School {
 
     get pickupPolicy() { return this._pickupPolicy; }
 }
+
+class HighSchool extends School {
+    constructor(name, numberOfStudents, sportsTeam) {
+        super(name, "high", numberOfStudents);
+        this._sportsTeam = sportsTeam;
+    }
+
+    get sportsTeam() { return this._sportsTeam; }
+}
+
