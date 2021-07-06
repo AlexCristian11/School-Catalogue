@@ -1,13 +1,13 @@
 class School {
     constructor(name, level, numberOfStudents) {
-        this.name = name;
-        this.level = level;
-        this.numberOfStudents = numberOfStudents;
+        this._name = name;
+        this._level = level;
+        this._numberOfStudents = numberOfStudents;
     }
 
-    get name() { return this.name; }
-    get level() { return this.level; }
-    get numberOfStudents() { return this.numberOfStudents; }
+    get name() { return this._name; }
+    get level() { return this._level; }
+    get numberOfStudents() { return this._numberOfStudents; }
 
     quickFacts() { 
         console.log(`${this.name} educates ${this.numberOfStudents} students at the ${this.level} school level`);
@@ -25,4 +25,13 @@ class School {
             console.log("Invalid input: numberOfStudents must be set to a number.");
         }
     }
+}
+
+class PrimarySchool extends School {
+    constructor(name, numberOfStudents, pickupPolicy) {
+        super(name, "primary", numberOfStudents);
+        this._pickupPolicy = pickupPolicy;
+    }
+
+    get pickupPolicy() { return this._pickupPolicy; }
 }
