@@ -4,4 +4,4 @@ This project represents classes in JavaScript and how to use them to create a sc
 
 ## School
 
-    - **Properties** : name (string), level (one of two strings: 'primary', 'high'), and numberOfStudents (number) 
+- **Properties** : name (string), level (one of two strings: 'primary', 'high'), and numberOfStudents (number) 
